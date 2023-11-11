@@ -86,7 +86,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/book/2/detail",
+							"raw": "http://localhost:8000/api/book/4/detail",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -95,7 +95,7 @@
 							"path": [
 								"api",
 								"book",
-								"2",
+								"4",
 								"detail"
 							]
 						}
@@ -109,7 +109,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_id\": 1,\n    \"book_id\": 2,\n    \"rating\": 2\n}",
+							"raw": "{\n    \"user_id\": 8,\n    \"book_id\": 4,\n    \"rating\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -117,7 +117,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/book/1/rating",
+							"raw": "http://localhost:8000/api/book/{{book_id}}/rating",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -126,7 +126,7 @@
 							"path": [
 								"api",
 								"book",
-								"1",
+								"{{book_id}}",
 								"rating"
 							]
 						}
