@@ -1,6 +1,8 @@
-# book_review_api
+# Book Review Api
 
-composer install
-cp .env.example to .env
-php artisan migrate --seed
-php artisan serve
+## Project Setup
+
+1. `$ composer install`
+1. copy .env.example to .env
+1. `$ php artisan migrate --seed`
+1. `$ php artisan serve`
