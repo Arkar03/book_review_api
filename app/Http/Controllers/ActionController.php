@@ -58,7 +58,7 @@ class ActionController extends Controller
                 ]);
                 return response()->json(['success' => "$title[0] is rated with $request->rating points out of 5."], 200);
             } catch (Exception $e) {
-                return response()->json(['error' => "$title[0] cannot be rated."], 400);
+                return response()->json(['error' => "$title[0] cannot be rated again."], 400);
             }
         } else {
             return response()->json(['error' => "Incorrect or Missing fields!"], 400);
